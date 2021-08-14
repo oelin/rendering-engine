@@ -1,0 +1,20 @@
+{
+  "name": "cube3d",
+  "version": "1.0.0",
+  "main": "matrix.js",
+  "scripts": {
+    "start": "serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oelin/Cube3d.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oelin/Cube3d/issues"
+  },
+  "homepage": "https://github.com/Oelin/Cube3d#readme",
+  "dependencies": {
+    "serve": "^12.0.0"
+  }
+}
