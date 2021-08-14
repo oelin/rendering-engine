@@ -27,7 +27,7 @@ window.onload = function() {
 
     matRoty = Matrix.fromArray([
       [Math.cos(theta.y), 0.0, -Math.sin(theta.y)],
-      [0.0, 1.0, 0.9],
+      [0.0, 1.0, 0.0],
       [Math.sin(theta.y), 0.0, Math.cos(theta.y)]
     ])
 
