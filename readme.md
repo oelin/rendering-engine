@@ -1,4 +1,3 @@
 # Renderer
 
-A simple, vertext-based 3D renderer, created to learn the basics of computer graphiics.
-
+A simple 3D renderering engine written in JavaScript. Created to learn about the basics of computer graphics.
