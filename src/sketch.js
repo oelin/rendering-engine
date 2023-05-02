@@ -1,7 +1,7 @@
 import World from './world.js'
 import Vector from './vector.js'
 import Matrix from './matrix.js'
-import { Prism, Cube } from './meshes.js'
+import { Cube } from './meshes.js'
 
 
 window.onload = function() {
