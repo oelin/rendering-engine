@@ -1,6 +1,7 @@
 import Vector from './vector.js'
 import Matrix from './matrix.js'
 
+const fade_factor = 8
 
 class World {
 
@@ -15,12 +16,12 @@ class World {
     // projection matrix
 
     this.zFar = 1000.0
-    this.zNear = 0.1 
-    this.fov = 90 
-    this.aspect = this.height / this.width 
+    this.zNear = 0.1
+    this.fov = 90
+    this.aspect = this.height / this.width
     this.fovRad = 1.0 / Math.tan(this.fov * 0.5 / 180 * 3.14159)
     this.projection = new Matrix(4, 4)
-    
+
     this.projection.data[0][0] = this.aspect * this.fovRad
     this.projection.data[1][1] = this.fovRad
     this.projection.data[2][2] = this.zFar / (this.zFar - this.zNear)
@@ -74,7 +75,7 @@ class World {
     let pa = this.project(a)
     let pb = this.project(b)
     let pc = this.project(c)
-    let shade = Math.floor((a.length() / 5) * 255)
+    let shade = Math.floor((a.length() / fade_factor) * 255)
 
     this.ctx.beginPath()
     this.ctx.moveTo(pb.x, pb.y)
